@@ -1,0 +1,323 @@
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background: linear-gradient(black);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+        nav ul li{
+            list-style: none;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            margin-left: 10px; 
+            color: orangered;
+            font-size: .8em;
+        }
+        strong{
+            color: rgb(82, 132, 224);
+            font-size: 1.4em;
+            -webkit-text-stroke: 1px rgb(255, 255, 255);
+            text-shadow: 0px 0px 10px rgb(82, 132, 224);
+            
+        }
+        li::after{
+             content: '';
+             background-color: orangered;
+             height: 3px;
+             width: 0;
+             display: block;
+             margin: auto;
+        }
+        li:hover::after{
+             width: 100%;
+             transition: 1s ease-in-out;
+        }
+        nav ul{
+            display: flex;
+            margin-top: 5px;
+        }
+        nav{
+            display: flex;
+            justify-content: space-between;
+            padding: 7px;
+            background-color: black;
+            box-shadow: 0px 2px 15px orangered;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: black;
+            z-index: 1000;
+            border: 2px solid orangered;
+        }
+        h2{
+            color: orangered;
+        }
+        b{
+            color: rgb(82, 132, 224);
+        }
+        #sec1 .in{
+            width: 350px;
+        }
+        h1{
+            color: orangered;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 2em;
+        }
+        #sec1 .in p{
+            color: rgb(255, 255, 255);
+            margin-top: 10px;
+            
+        }
+        #sec1 img{
+            height: 250px;
+            border-radius: 50%;
+            border: 2px solid orangered;
+            box-shadow: 0px 0px 20px orangered;
+            animation: bord 2s infinite;
+            
+        }
+        @keyframes bord{
+            0%{border-color: orangered;
+            box-shadow: 0px 0px 20px orangered;
+            }
+            100%{border-color: rgb(82, 132, 224);
+            box-shadow: 0px 0px 20px rgb(82, 132, 224);
+            
+            }
+        }
+        #sec1{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            gap: 50px;
+            margin-top: 200px;
+            padding: 10px;
+        
+        }
+        #sec1 .in button{
+          font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+          padding: 5px 10px;
+          background-color: orangered;
+          border: .8px solid white;
+          border-radius: 20px;
+          margin-top: 10px;
+          font-size: 1.2em;
+        }
+        #sec1 .in button:hover{
+            background-color: black;
+            border: 2px solid orangered;
+            transition: 1s ease-in-out;
+            color: orangered;
+            cursor: pointer;
+        }
+        #sec2{
+          margin-top: 310px;
+        }
+        h3{
+            background-color: black;
+            color: orangered;
+            text-align: center;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 3em;
+            border: 2px solid orangered;
+            box-shadow: 0px -10px 100px orangered;
+
+        }
+        .inn{
+            border: 2px solid orangered;
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 40px;
+        }
+        #sec2 .inn div{
+            border: 2px solid orangered;
+            width: 300px;
+            height: 300px;
+            color: orangered;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+            font-size: .9em;
+            box-shadow: 0px 0px 15px orangered;
+            padding: 0px 10px;
+
+        }
+        .span{
+            color: white;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        #sec3{
+              margin-top: 0px;
+            
+
+        }
+        #sec3 img{
+            height: 200px;
+            border: 2px solid orangered;
+            box-shadow: 0px 0px 15px orangered;
+            margin-top: 30px;
+            border-radius: 10px;
+
+        }
+        .connn{
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            padding: 20px 0px;
+
+
+
+        }
+        @media (min-width: 1000px){
+        .connn:hover img:not(:hover){
+            border-color: aliceblue;
+            transition: 1s ease-in-out;
+            filter: blur(5px);
+        }
+        .connn img:hover{
+            border-color: white;
+            transform: scale(1.1);
+        }
+    }
+    form{
+        background-color: orangered;
+        padding: 10px;
+    }
+    form input, textarea{
+        background-color: white;
+        border: none;
+        padding-left: 5px;
+    }
+    #f1{
+        display: flex;
+        color: white;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    .innnn{
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+        margin-top: 30px;
+        border: 2px solid black;
+        padding: 8px;
+        border-radius: 10px;
+        background-color: black;
+
+    }
+    .innnnn{
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+        margin-top: 30px;
+        border: 2px solid black;
+        padding: 8px;
+        border-radius: 10px;
+        background-color: black;
+    }
+    .innnnn label{
+        margin-bottom: 10px;
+    }
+    textarea{
+        height: 150px;
+    }
+    .innnn input{
+        margin-top: 10px;
+        height: 25px;
+
+    }
+    .innnnnn{
+        margin-top: 30px;
+        border: 2px solid black;
+        padding: 8px;
+        height: fit-content;
+        border-radius: 10px;
+        background-color: black;
+
+
+
+
+    }
+    #f1 button{
+        background-color: rgb(82, 132, 224);
+        color: white;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 1.2em;
+        padding: 5px 0px;
+        border-radius: 20px;
+        border: none;
+        margin: 10px;
+        cursor: pointer;
+    }
+    form h3 {
+        background-color: black;
+        color: orangered;
+    }
+    a{
+        text-decoration: none;
+    }
+    .lang img{
+        height: 200px;
+        filter: drop-shadow(0px 0px 15px orangered);
+    }
+    .lang p{
+        color: white;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: .8em;
+    }
+    .lang{
+       position: absolute; 
+       left: 50%;
+       transform: translateX(-50%);
+       display: flex;
+       flex-direction: column;
+       width: 300px;
+       text-align: center;
+       background-color: black;
+       border: 2px solid orangered;
+       box-shadow: 0px 0px 20px orangered;
+       padding: 10px 10px;
+       border-radius: 10px;
+       display: none;
+       z-index: 999;
+                
+    }
+    .lang button{
+        background-color: rgb(82, 132, 224);
+        border-radius: 20px;
+        border: none;
+        color: white;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 1em;
+        padding: 5px 0px;
+        margin-top: 10px;
+        cursor: pointer;
+    }
+    .inn .card:hover{
+        transition: 1s ease-in-out;
+        border-color: white;
+        box-shadow: 0px 0px 20px white;
+        transform: scale(1.1);
+        }
+    .inn .card p{
+        color: white;
+        font-size: .7em;
+        transform: translateY(50%);
+        text-align: center;
+    }
+    #sec2, #sec3, form{
+        margin-top: 270px;
+    }
+    .inn{
+        border: none;
+    }
+    
