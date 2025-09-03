@@ -8,24 +8,12 @@
             lang.style.display = 'none'
             sec1.style.filter = 'none'
 
-          })
-const observer = new IntersectionObserver((entries)=>{
-  entries.forEach((entry) =>{
-    console.log(entry)
-    if(entry.isIntersecting){
-      entry.target.classList.add('show')
-    }
-    else{
-      entry.target.classList.remove('show')
-    }
-  });
-});
+          });
 
-const hiddenElements = document.querySelectorAll('.card');
-hiddenElements.forEach((el)=> observer.observe(el));
 
           learn.addEventListener('click',()=>{
             lang.style.display = 'flex'
             sec1.style.filter = 'blur(20px)'
-          })
+          });
+
 
