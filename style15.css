@@ -321,18 +321,8 @@
     .inn{
         border: none;
     }
-    .card{
-        opacity: 0;
-        transaction: 1s all;
-        transform: translateX(-100%);
-        filter: blur(20px);
-    }
-    .show{
-        opacity: 0;
-        transform: translateX(0%);
-        filter: blur(0px);
-
-    }
     
+    
+
 
 
